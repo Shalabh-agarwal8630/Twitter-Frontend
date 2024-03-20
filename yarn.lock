@@ -547,7 +547,7 @@
     "@graphql-codegen/plugin-helpers" "^5.0.3"
     tslib "~2.6.0"
 
-"@graphql-codegen/cli@5.0.2":
+"@graphql-codegen/cli@^5.0.2":
   version "5.0.2"
   resolved "https://registry.npmjs.org/@graphql-codegen/cli/-/cli-5.0.2.tgz"
   integrity sha512-MBIaFqDiLKuO4ojN6xxG9/xL9wmfD3ZjZ7RsPjwQnSHBCUXnEkdKvX+JVpx87Pq29Ycn8wTJUguXnTZ7Di0Mlw==

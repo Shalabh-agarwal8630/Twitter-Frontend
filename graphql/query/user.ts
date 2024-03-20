@@ -5,7 +5,7 @@ query verifyUserGoogleToken($token:String!)
  verifyGoogleToken(token:$token )
 }
 
-`)
+`);
 
 export const getCurrentUserQuery = graphql(`
  query GetCurrentUser{
@@ -18,4 +18,4 @@ export const getCurrentUserQuery = graphql(`
   }
  }
  `
-)
+);
