@@ -8,6 +8,7 @@ query GetAllTweets{
   content
   imageUrl
   author{
+   id
    firstName
    lastName
    profileImageUrl

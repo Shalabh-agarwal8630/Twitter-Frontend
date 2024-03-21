@@ -11,3 +11,10 @@ export const useCurrentUser = () => {
 
   return { ...query, user: query.data?.getCurrentUser };
 }
+
+// export const useGetUserById=()=>{
+//   const query=useQuery
+//   ({
+//     queryKey:["current-user"]
+//   })
+// }
