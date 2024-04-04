@@ -12,6 +12,9 @@ interface FeedCardProps {
 
 const FeedCard: React.FC<FeedCardProps> = (props) => {
   const { data } = props;
+  console.log(data.author?.profileImageUrl);
+  console.log(data.author?.firstName ," op ",data.author?.lastName);
+
   return (
     <div className="border border-gray-600 p-4 border-r-0 border-l-0 border-b-0 hover:bg-slate-900 transition-all cursor-pointer">
       <div className="grid grid-cols-12 gap-3">
@@ -28,11 +31,22 @@ const FeedCard: React.FC<FeedCardProps> = (props) => {
         </div>
         <div className="col-span-11">
           <h5>
-          <Link href={`/${data.author?.id}`}>
+            <Link href={`/${data.author?.id}`}>
               {data.author?.firstName} {data.author?.lastName}{" "}
             </Link>
+            
           </h5>
           <p>{data.content}</p>
+          {data.imageURL && (
+            <Image
+              src={data.imageURL}
+              alt="Image-op"
+              width={400}
+              height={400}
+              className="rounded-xl"
+            />
+          )}
+
           <div className="flex justify-between mt-5 text-xl items-center p-2 w-[90%]">
             <div>
               <BiMessageRounded />
