@@ -46,7 +46,7 @@ export default function Home(props:HomeProps) {
         })
       }
       toast.success("Uploaded Image successfully",{id:'2'})
-      const url=new URL(getSignedURLForTweet)
+      const url=new URL(getSignedURLForTweet as string)
       const myFilePath=`${url.origin}${url.pathname}`
       setImageURL(myFilePath);
 
